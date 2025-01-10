@@ -1,0 +1,139 @@
+/* Enhanced Navigation */
+.nav-indicator {
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 998;
+    padding: 10px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.nav-dot {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hover Effects */
+.nav-dot:hover {
+    transform: scale(1.2);
+    background: var(--primary-color);
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Active State */
+.nav-dot.active {
+    background: var(--primary-color);
+    border-color: white;
+    transform: scale(1.4);
+    box-shadow: 0 0 15px rgba(var(--primary-color-rgb), 0.6);
+}
+
+.nav-dot.active::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: var(--primary-color);
+    animation: pulse 2s infinite;
+    z-index: -1;
+}
+
+/* Navigation Labels */
+.nav-label {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-dot:hover .nav-label {
+    opacity: 1;
+    visibility: visible;
+    right: 25px;
+    transform: translateY(-50%) translateX(-5px);
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.8;
+    }
+    70% {
+        transform: translate(-50%, -50%) scale(2);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(2);
+        opacity: 0;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-indicator {
+        right: 15px;
+        gap: 12px;
+        padding: 8px;
+    }
+
+    .nav-dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .nav-label {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .nav-indicator {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-label {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+    }
+}
+
+/* High Contrast Mode */
+@media (forced-colors: active) {
+    .nav-dot {
+        border: 2px solid currentColor;
+    }
+    
+    .nav-dot.active {
+        background: currentColor;
+    }
+}

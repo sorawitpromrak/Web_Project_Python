@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="เว็บไซต์สำหรับแนะนำตัวอย่างการเขียนภาษา Python Comment อย่างถูกต้อง เพื่อเพิ่มประสิทธิภาพในการเรียนรู้">
+    <meta name="keywords"
+        content="Python ,Code Python ,Comment Python , Web Developed, Software Engineer, SEO, On-Page SEO, Search Engine Optimization, SEO tips">
+    <meta name="author" content="Sorawit Promrak">
+    <title>sorawit promrak of software engineer</title>
+    <link rel="canonical" href="https://www.example.com/pythoncomments">
+
+    <!-- Open Graph Tags for Social Sharing -->
+    <meta property="og:title" content="คู่มือการเรียนรู้ Python Comments">
+    <meta property="og:description" content="เรียนรู้วิธีการใช้ Comments python">
+    <meta property="og:url" content="https://www.example.com/pythoncomments">
+    <meta property="og:image" content="https://www.example.com/images/seo-guide.jpg">
+    <meta property="og:type" content="website">
+   
+    <!-- ===== Bootstrap Responsive ===== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- ===== CSS Effect ===== -->
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+    <!-- ===== CSS Menu ===== -->
+    <link rel="stylesheet" href="/CSS/style_index.css">
+    <link rel="stylesheet" href="/CSS/style_article.css">
+    <link rel="stylesheet" href="/CSS/style_footer.css">
+    <link rel="stylesheet" href="/CSS/style_nav_dot.css">
+    <link rel="stylesheet" href="/CSS/style_meunbar.css">
+    <link rel="stylesheet" href="/CSS/style_typed-text.css">
+    <link rel="stylesheet" href="/CSS/style_article.css">
+    <link rel="stylesheet" href="/CSS/style_darklight.css">
+    <link rel="stylesheet" href="/CSS/style_backtotop-button.css">
+    <link rel="stylesheet" href="/CSS/style_adaptive-text-color.css">
+    <link rel="stylesheet" href="/CSS/style_exam.css">
+    <link rel="stylesheet" href="/CSS/style_loading-screen.css">
+
+    <!-- แสดงไอคอนของเว็บไซต์ในเบราว์เซอร์ -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <header>
+        <!-- Navbar -->
+        <nav class="fixed-nav navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Python Comments</a>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home"><i class="nav-icon">🏠</i>
+                                Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#articles"><i class="nav-icon">📚</i> Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#exam"><i class="nav-icon">✍️</i> Exam</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact"><i class="nav-icon">📞</i> Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" onclick="toggleNavbar()" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Navigation Indicator -->
+        <div class="nav-indicator">
+            <div class="nav-dot" data-section="home">
+                <span class="nav-label">Home</span>
+            </div>
+            <div class="nav-dot" data-section="articles">
+                <span class="nav-label">Articles</span>
+            </div>
+            <div class="nav-dot" data-section="exam">
+                <span class="nav-label">Exam</span>
+            </div>
+            <div class="nav-dot" data-section="contact">
+                <span class="nav-label">Contact</span>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Overlay -->
+        <div class="mobile-nav-overlay"></div>
+    </header>
+
+
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <div class="home-content" data-aos="fade-up">
+                <h1 class="data-section" style="color: #eee;">Welcome to Website Sorawit Promrak</h1><br>
+                <p>------------------#######------------------</p>
+                <br>
+                My job position <span class="typed-text"></span><span class="cursor"></span></h1>
+                <br><br>
+                <p class="intro important" class="subtitle">Discover the world of modern web development</p>
+            </div>
+        </section>
+
+        <!-- Articles Section -->
+        <section id="articles">
+            <div class="adaptive-container__wrapper">
+                <div class="adaptive-container__background">
+                    <h2 class="adaptive-container__title section-title">Articles</h2>
+                </div>
+            </div>
+            <br>
+            <div class="article-theme">
+                <main class="article-main">
+                    <div class="article-real-world-example">
+                        <h2 class="article-title">Comments Python คืออะไร?</h2>
+                        <center><img src="/image/Comments_Python.png" alt="ข้อความอธิบายภาพ" style="max-width:100%;height:auto;"></center>                        
+                        <br><br>
+                        <p>Python Comments คือ ข้อความที่ใช้อธิบายโค้ดในโปรแกรม Python โดยคอมไพเลอร์จะไม่ประมวลผลส่วนนี้
+                            ช่วยให้โค้ดอ่านง่ายและเข้าใจได้ดีขึ้น
+                            <br><br>การเขียนคำอธิบายโค้ดที่เราเขียนเป็นเรื่องจำเป็นมาก เพื่ออธิบาย
+                            ว่าโค้ดที่เราเขียนทำงานยังไง นอกจากนี้ ยังเป็นบันทึกช่วยจำ และ ถ้าเขียนโค้ดกันหลายคน
+                            ก็เป็นประโยชน์กับคนอื่นที่เข้ามาอ่านโค้ดของเราด้วย การเขียนคำอธิบายโค้ด หรือ comment บรรทัด
+                            ที่เรา ใส่เครื่องหมาย comment ไว้ Python จะไม่นำไปแปลความหมาย (ไม่ถูกประมวลผล)
+                            <br><br> Comment หรือคำอธิบายโค้ด คือข้อความที่ Programmer
+                            มักเขียนแทรกไว้ในโค้ดเพื่อกลับมาดูทีหลังจะได้รู้ว่าโค้ดส่วนนั้นเอาไว้ทำอะไร
+                            หรือเอาไว้ให้ผู้ที่รับช่วงพัฒนาโปรแกรมต่อดู
+                            เพื่อจะได้รู้ความหมายหรือจุดมุ่งหมายในการเขียนโค้ดส่วนนั้น ๆ
+                            ซึ่งการเขียนคอมเม้นต์หรือคำอธิบายโค้ดในภาษา Python มี 2 ประเภท คือ
+                            <br> - ประเภทที่ 1 Line Comment
+                            <br> - ประเภทที่ 2 Block Comment
+                        </p>
+                        <br>
+                    </div>
+
+                    <div class="article-real-world-example">
+                        <u>
+                            <h2 class="article-title">ประเภทของ Comments ใน Python</h2>
+                        </u>
+
+                        <h3 class="article-title">1. Line Comment</h3>
+                        <p> Line Comment หรือ Single-line Comments คือการเขียนคำอธิบายแบบบรรทัดเดียว</p>
+                        <p>ใช้เครื่องหมาย # เพื่อเขียนคำอธิบายในบรรทัดเดียว</p>
+                        <div class="article-code">
+                            # นี่คือตัวอย่าง comment แบบบรรทัดเดียว
+                            x = 5 # กำหนดค่าตัวแปร x เป็น 5
+                        </div>
+
+                        <h3 class="article-title">2. Multi-line Comments (คำอธิบายแบบหลายบรรทัด)</h3>
+                        <p>เป็นการเขียน Comment หรือคำอธิบายที่มีการกำหนดจุดเริ่มต้นและจุดสิ้นสุด(หลายบรรทัด)</p>
+                        <p>ใช้เครื่องหมาย """ หรือ ''' เพื่อเขียนคำอธิบายหลายบรรทัด</p>
+                        <div class="article-code">
+                            """
+                            นี่คือตัวอย่าง comment แบบหลายบรรทัด
+                            สามารถเขียนได้หลายบรรทัด
+                            โดยไม่ต้องใส่ # ทุกบรรทัด
+                            """
+                        </div>
+                    </div>
+
+                    <div class="article-real-world-example">
+                        <u>
+                            <h2 class="article-title">แนวทางการใช้ Comments Python ที่ดี</h2>
+                        </u>
+                        <p>ควรใช้คำอธิบายแบบหลายบรรทัดเฉพาะเมื่อจำเป็นเพื่อให้มีบริบทเพิ่มเติมหรือคำอธิบายสำหรับส่วนโค้ดที่ซับซ้อน
+                        </p>
+                        <br>
+                        <div class="article-example">
+                            <h3 class="article-title">1. ใช้อธิบายส่วนที่ซับซ้อน</h3>
+                            <div class="article-code">
+                                # คำนวณพื้นที่สามเหลี่ยมโดยใช้สูตรเฮรอน
+                                s = (a + b + c) / 2 # คำนวณครึ่งเส้นรอบรูป
+                                area = (s*(s-a)*(s-b)*(s-c)) ** 0.5 # สูตรเฮรอน
+                            </div>
+
+                            <h3 class="article-title">2. ใช้สำหรับ Documentation</h3>
+                            <div class="article-code">
+                                def calculate_area(radius):
+                                """
+                                คำนวณพื้นที่วงกลม
+
+                                Parameters:
+                                radius (float): รัศมีของวงกลม
+
+                                Returns:
+                                float: พื้นที่ของวงกลม
+                                """
+                                return 3.14 * radius ** 2
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="article-real-world-example">
+                        <u>
+                            <h2 class="article-title">ตัวอย่างการใช้งานจริง</h2>
+                        </u>
+
+
+                        <h3 class="article-title">1. การใช้ Comments ในการ Debug</h3>
+                        <div class="article-code">
+                            <div class="article-code">def calculate_total(items):
+                                total = 0
+                                for item in items:
+                                # Debug: แสดงค่าราคาสินค้าแต่ละชิ้น
+                                print(f"Processing item: {item['price']}")
+                                total += item['price']
+                                return total</div>
+                        </div>
+
+                        <h3 class="article-title">2. การใช้ Comments ในการจัดการ Version</h3>
+                        <div class="article-code">
+                            <div class="article-code"># Version: 1.0.2
+                                # Last updated: 2024-01-07
+                                # Changes:
+                                # - เพิ่มการตรวจสอบข้อมูลนำเข้า
+                                # - แก้ไขบัคการคำนวณภาษี
+                                def process_order(order_data):</div>
+                        </div>
+
+                        <h3 class="article-title">3. การใช้ Comments ในการทำ Documentation</h3>
+                        <div class="article-code">
+                            <div class="article-code">class ShoppingCart:
+                                """
+                                คลาสสำหรับจัดการตะกร้าสินค้า
+
+                                Attributes:
+                                items (list): รายการสินค้าในตะกร้า
+                                total (float): ราคารวมทั้งหมด
+
+                                Methods:
+                                add_item(item): เพิ่มสินค้าในตะกร้า
+                                remove_item(item_id): ลบสินค้าออกจากตะกร้า
+                                calculate_total(): คำนวณราคารวม
+                                """</div>
+                        </div>
+                    </div>
+
+                    <div class="article-real-world-example">
+                        <u>
+                            <h2 class="article-title">สรุปการใช้ Comments Python</h2>
+                        </u>
+                        <div class="article-example-Summary ">
+                            <p>สรุป : Comments ใน Python มีประโยชน์สำหรับการอธิบายโค้ดหรือทำให้โค้ดอ่านเข้าใจง่ายขึ้น
+                                นอกจากการใช้ # ในการเขียน comment แล้ว ในภาษา Python ยังมีวิธีการเขียน comment
+                                ในหลายบรรทัด โดยใช้เครื่องหมาย """ หรือ ''' ครอบเอาเนื้อหา comment
+                                ตั้งแต่บรรทัดแรกจนถึงบรรทัดสุดท้าย</p>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Exam Section -->
+        <section id="exam">
+            <div class="adaptive-container__wrapper">
+                <div class="adaptive-container__background">
+                    <h2 class="adaptive-container__title section-title">exam</h2>
+                </div>
+            </div>
+            <br>
+            <div class="exam-body">
+                <h1 class="article-title">ฝึกฝน Python: คำอธิบายโค้ด</h1>
+                <div class="exam-container">
+                    <span class="exam-level exam-basic">ขั้นพื้นฐาน</span>
+                    <h2>แบบฝึกหัดที่ 1: Comment แบบบรรทัดเดียว</h2>
+                    <p>ให้เพิ่ม comment เพื่ออธิบายการทำงานของโค้ดต่อไปนี้:</p>
+                    <div class="exam-code">
+                        x = 15
+                        y = 25
+                        ผลลัพธ์ = x + y
+                        print(ผลลัพธ์)</div>
+                    <button class="exam-button" onclick="toggleSolution('solution1')">ดูคำตอบ</button>
+                    <div id="solution1" class="exam-solution">
+                        <div class="exam-code">
+                            # กำหนดค่าให้ตัวแปร x เป็น 15
+                            x = 15
+                            # กำหนดค่าให้ตัวแปร y เป็น 25
+                            y = 25
+                            # คำนวณผลรวมของ x และ y
+                            ผลลัพธ์ = x + y
+                            # แสดงผลลัพธ์
+                            print(ผลลัพธ์)</div>
+                    </div>
+                </div>
+                <div class="exam-container">
+                    <span class="exam-level exam-intermediate">ขั้นกลาง</span>
+                    <h2>แบบฝึกหัดที่ 2: Comment หลายบรรทัด</h2>
+                    <p>ให้เขียน comment หลายบรรทัดเพื่ออธิบายการทำงานของฟังก์ชันนี้:</p>
+                    <div class="exam-code">
+                        def คำนวณค่าเฉลี่ย(ตัวเลข):
+                        รวมทั้งหมด = sum(ตัวเลข)
+                        จำนวน = len(ตัวเลข)
+                        return รวมทั้งหมด / จำนวน if จำนวน > 0 else 0</div>
+                    <button class="exam-button" onclick="toggleSolution('solution2')">ดูคำตอบ</button>
+                    <div id="solution2" class="exam-solution">
+                        <div class="exam-code">
+                            def คำนวณค่าเฉลี่ย(ตัวเลข):
+                            """
+                            ฟังก์ชันสำหรับคำนวณค่าเฉลี่ยจากลิสต์ตัวเลข
+
+                            พารามิเตอร์:
+                            ตัวเลข (list): ลิสต์ที่มีตัวเลขที่ต้องการคำนวณ
+
+                            คืนค่า:
+                            float: ค่าเฉลี่ยของตัวเลขทั้งหมด
+                            ถ้าลิสต์ว่างเปล่าจะคืนค่า 0
+                            """
+                            รวมทั้งหมด = sum(ตัวเลข)
+                            จำนวน = len(ตัวเลข)
+                            return รวมทั้งหมด / จำนวน if จำนวน > 0 else 0</div>
+                    </div>
+                </div>
+                <div class="exam-container">
+                    <span class="exam-level exam-advanced">ขั้นสูง</span>
+                    <h2>แบบฝึกหัดที่ 3: Debugging ด้วย Comment</h2>
+                    <p>ใช้ comment เพื่อช่วย debug โค้ดต่อไปนี้:</p>
+                    <div class="exam-code">
+                        def ประมวลผลข้อมูล(ข้อมูล):
+                        ผลลัพธ์ = []
+                        for รายการ in ข้อมูล:
+                        ค่า = รายการ * 2
+                        if ค่า > 10:
+                        ค่า = ค่า - 5
+                        ผลลัพธ์.append(ค่า)
+                        return ผลลัพธ์
+
+                        ตัวเลข = [3, 9, 4, 6]
+                        ผลลัพธ์ = ประมวลผลข้อมูล(ตัวเลข)
+                        print(ผลลัพธ์)</div>
+                    <button class="exam-button" onclick="toggleSolution('solution3')">ดูคำตอบ</button>
+                    <div id="solution3" class="exam-solution">
+                        <div class="exam-code">
+                            def ประมวลผลข้อมูล(ข้อมูล):
+                            """
+                            ประมวลผลรายการในลิสต์โดยการคูณด้วย 2 และลบ 5 ถ้าผลลัพธ์มากกว่า 10
+                            """
+                            ผลลัพธ์ = []
+                            for รายการ in ข้อมูล:
+                            # DEBUG: แสดงรายการก่อนการคูณ
+                            print(f"กำลังประมวลผล: {รายการ}")
+
+                            # คูณรายการด้วย 2
+                            ค่า = รายการ * 2
+                            print(f"หลังการคูณ: {ค่า}")
+
+                            # ลบ 5 ถ้าค่ามากกว่า 10
+                            if ค่า > 10:
+                            ค่า = ค่า - 5
+                            print(f"ค่ามากกว่า 10 หลังการลบ: {ค่า}")
+
+                            # เพิ่มค่าในลิสต์ผลลัพธ์
+                            ผลลัพธ์.append(ค่า)
+                            print(f"ลิสต์ผลลัพธ์ปัจจุบัน: {ผลลัพธ์}")
+
+                            return ผลลัพธ์
+
+                            ตัวเลข = [3, 9, 4, 6] # ข้อมูลทดสอบ
+                            ผลลัพธ์ = ประมวลผลข้อมูล(ตัวเลข)
+                            print(ผลลัพธ์) # ผลลัพธ์ที่คาดหวัง: [6, 13, 8, 7]</div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <!-- contact Section -->
+    <footer class="footer-section">
+        <section id="contact">
+            <h2 class="footer-title" data-aos="fade-right">Contact</h2>
+            <div class="footer-contact">
+                <div class="footer-contact-item">
+                    <i class='bx bx-user'></i>
+                    <span>Sorawit Promrak</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class='bx bx-envelope'></i>
+                    <a href="mailto:sorawit@example.com">sorawit@example.com</a>
+                </div>
+                <div class="footer-contact-item">
+                    <i class='bx bx-phone'></i>
+                    <a href="tel:+66123456789">+66 123 456 789</a>
+                </div>
+                <div class="footer-contact-item">
+                    <i class='bx bx-map'></i>
+                    <span>Bangkok, Thailand</span>
+                </div>
+            </div>
+
+            <div class="footer-social">
+                <a href="github.com" class="footer-social-icon" data-aos="zoom-in"><i class='bx bxl-github'></i></a>
+                <a href="#" class="footer-social-icon" data-aos="zoom-in"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" class="footer-social-icon" data-aos="zoom-in"><i class='bx bxl-twitter'></i></a>
+            </div>
+            <p>
+                <center>Copyright &copy; <span id="footer-year"></span> Developed by <strong>Sorawit Promrak</strong>
+                </center>
+            </p>
+            <br>
+            <div class="footer-info"></div>
+
+            <h2 class="footer-title" data-aos="fade-right">Skills</h2>
+            <div class="footer-skills">
+                <div class="footer-skill-item" data-aos="zoom-in" data-aos-delay="100"
+                    onclick="document.querySelector('a[href=\'#contact\']').click()">
+                    <i class='bx bxl-html5 footer-skill-icon'></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="footer-skill-item" data-aos="zoom-in" data-aos-delay="200"
+                    onclick="document.querySelector('a[href=\'#contact\']').click()">
+                    <i class='bx bxl-css3 footer-skill-icon'></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="footer-skill-item" data-aos="zoom-in" data-aos-delay="300"
+                    onclick="document.querySelector('a[href=\'#contact\']').click()">
+                    <i class='bx bxl-javascript footer-skill-icon'></i>
+                    <h3>JavaScript</h3>
+                </div>
+
+            </div>
+            </div>
+        </section>
+    </footer>
+
+    
+<!-- ---------------------------------#######------------------------------  -->
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </div>
+
+    <!-- Effect button mode darklight  -->
+    <div class="toggle-container" id="themeToggle">
+        <button class="theme-btn">
+            <span class="icon sun">☀️</span>
+            <span class="icon moon">🌙</span>
+        </button>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Page Transition -->
+    <div class="page-transition"></div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar"></div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Energy Fields -->
+    <div class="energy-field"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-animation">
+            <div class="loading-circle"></div>
+            <div class="loading-circle"></div>
+            <div class="loading-circle"></div>
+            <div class="loading-circle"></div>
+            <div class="loading-circle"></div>
+        </div>
+    </div>
+
+    <!-- Loading Animation -->
+    <div class="loader">
+        <div class="loader-spin"></div>
+    </div>
+
+    <!-- Theme Switcher -->
+    <div class="theme-switcher glass-card">
+        <div class="theme-options">
+            <div class="theme-option" style="background: #3a86ff" data-theme="blue"></div>
+            <div class="theme-option" style="background: #ff006e" data-theme="pink"></div>
+            <div class="theme-option" style="background: #38b000" data-theme="green"></div>
+        </div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="bg-circle" style="width: 300px; height: 300px; top: 20%; left: 20%;"></div>
+        <div class="bg-circle" style="width: 200px; height: 200px; top: 60%; left: 60%;"></div>
+        <div class="bg-circle" style="width: 250px; height: 250px; top: 40%; left: 80%;"></div>
+    </div>
+
+
+    <!-- Previous sections remain -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+
+
+    <!-- JavaScript Meun -->
+    <script src="/Javascript/script_nav_dots.js"></script>
+    <script src="/Javascript/script_index.js"></script>
+    <script src="/Javascript/script_footer.js"></script>
+    <script src="/Javascript/script_backtotop.js"></script>
+    <script src="/Javascript/script_loading.js"></script>
+    <script src="/Javascript/scritpt_dark_light.js"></script>
+    <script src="/Javascript/script_theme_switcher.js"></script>
+    <script src="/Javascript/script_meun-navbar.js"></script>
+    <script src="/Javascript/script_typed-text.js"></script>
+    <script src="/Javascript/scirpt_article.js"></script>
+    <script src="/Javascript/script_darklight.js"></script>
+    <script src="/Javascript/script_backtotop-button.js"></script>
+    <script src="/Javascript/script_adaptive-text-color.js"></script>
+    <script src="/Javascript/script_meunbar.js"></script>
+    <script src="/Javascript/script_animation-effect.js"></script>
+    <script src="/Javascript/scirpt_exam.js"></script>
+
+
+    <!-- ๋JavaScript Effect -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+
+    <!-- JavaScript bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript SEO -->
+    <script src="/Javascript/scirpt_seo.js"></script>
+
+    <script>
+        const projectSlides = document.querySelector('.project-slides');
+        projects.forEach(project => {
+            const slide = document.createElement('div');
+            slide.className = 'project-slide';
+            slide.innerHTML = `
+                <div class="project-info">
+                    <h3>${project.title}</h3>
+                    <p>${project.description}</p>
+                    <button class="modern-btn">View Project</button>
+                </div>
+                <div class="project-image">
+                    <img src="${project.image}" alt="${project.title}">
+                </div>
+            `;
+            projectSlides.appendChild(slide);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+  /* Enhanced animations and transitions */
+  .section-title {
+    position: relative;
+    display: inline-block;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: var(--text-color);
+  }
+  
+  .section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: var(--section-color);
+    transition: width 0.3s ease;
+  }
+  
+  .section-title:hover::after {
+    width: 100%;
+  }
+
+
+
+  
+
+
+.adaptive-container__wrapper {
+    position: relative;
+    width: fit-content;
+  }
+
+  .adaptive-container__background {
+    background-color: rgba(250, 250, 250, 0.711);
+    padding: 5px;
+    margin: 0;
+    border-radius: 4px;
+  }
+
+  .adaptive-container__title {
+    margin: 0;
+    font-family: inherit;
+    transition: color 0.3s ease;
+  }
+
+  /* เพิ่ม data attribute เพื่อควบคุมสถานะ */
+  .adaptive-container__title[data-theme="dark"] {
+    color: #FFFFFF;
+  }
+
+  .adaptive-container__title[data-theme="light"] {
+    color: #000000;
+  }
+
+
+

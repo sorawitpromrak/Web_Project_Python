@@ -1,0 +1,111 @@
+/* ตั้งค่าสีหลักสำหรับ Article */
+.article-theme {
+    --article-primary: #aa1c9e;
+    --article-secondary: #FFD43B;
+    --article-text: #333;
+    --article-bg: #f8f9fa;
+    --article-heading: #090df76e;
+    --article-accent-color: #4a90e2;
+}
+
+.article-body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+
+/* Container หลักของ Article */
+.article-main {
+    font-family: 'Sarabun', sans-serif;
+    line-height: 1.6;
+    color: var(--article-text);
+    background-color: var(--article-bg);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ส่วนหัวของ Article */
+.article-header {
+    color: var(--article-text);
+    padding: 2rem 0;
+}
+
+/* หัวข้อใน Article */
+.article-title {
+    color: var(--article-heading);
+    margin-bottom: 2rem;
+}
+
+
+/* ส่วนแสดงโค้ดใน Article */
+.article-code {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin: 1rem 0;
+    font-family: monospace;
+    display: block;
+    line-height: 1.5;
+}
+
+.article-code-block {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+.article-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.article-content-section {
+    margin: 2rem 0;
+}
+
+
+
+/* ส่วนแสดงตัวอย่างใน Article */
+.article-example {
+    border-left: 4px solid var(--article-secondary);
+    padding-left: 1rem;
+    margin: 1rem 0;
+}
+
+/* รายการ Article */
+.article-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* การ์ด Article */
+.article-item {
+    background: var(--article-bg);
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--article-text);
+}
+
+.article-real-world-example {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-color);
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+/* การแสดงผลบนหน้าจอขนาดเล็ก */
+@media (max-width: 768px) {
+    .article-main {
+        padding: 10px;
+    }   
+}
