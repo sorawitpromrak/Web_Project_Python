@@ -1,6 +1,6 @@
 # Web_Project_Python
 
-<p>ปแบบของเว็บไซต์ : Single Page Website <br/></p>
+<p>รูปแบบของเว็บไซต์ : Single Page Website <br/></p>
 <p>ประเภทของ Responsive : Fluid Layout with Breakpoints <br/></p>
 <p>ภาษาที่ใช้ในการพัฒนาเว็บ : HTML ,CSS ,JS <br/></p>
 <p>หัวข้อเรืองที่ได้รับมอบหมาย : Python Comments <br/></p>
